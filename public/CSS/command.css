@@ -196,7 +196,7 @@
 }
 
 .navbar_bott {
-  margin-top: 20px;
+  margin-top: 25px;
   width: 100%;
   height: 40px;
 
@@ -210,9 +210,11 @@
   width: auto;
   height: auto;
   margin-right: 10px;
+  margin-top: 10px;
 
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .nav_bott_menu_box .browse_box {
@@ -251,6 +253,7 @@
   margin-right: 20px;
   width: auto;
   height: 41px;
+  width: px;
   display: flex;
 }
 
@@ -260,6 +263,34 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
-  letter-spacing: 0%;
-  text-align: left;
+  /* letter-spacing: 0%; */
+  /* text-align: right; */
+
+  text-decoration: none;
+}
+
+.router_menu a.active {
+  color: #c8c64a;
+}
+
+.nav_bott_menu_box .sorting_menu {
+  margin-left: 392px;
+  display: flex;
+  flex-direction: row;
+  right: 100%;
+  /* position: absolute; */
+  right: 100%;
+}
+
+.sorting_menu span {
+  margin-left: 20px;
+  color: rgb(255, 255, 255);
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  /* letter-spacing: 0%; */
+  /* text-align: right; */
+
+  text-decoration: none;
 }
