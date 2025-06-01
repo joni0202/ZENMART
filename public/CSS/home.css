@@ -157,22 +157,26 @@
   font-weight: 400;
   line-height: 22px;
   letter-spacing: 0%;
-  /* text-align: center; */
 }
 
-.header_frame .box_left .hover_boder {
-  display: flex;
-  width: 122.303px;
-  height: 27px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 3px;
+.header_frame .box_left .hover_border {
+  margin-top: 10px;
+  height: 2px;
+  width: 30px;
   flex-shrink: 0;
-  color: #192640;
+  align-self: stretch;
 
-  /* Button-Shadow */
-  box-shadow: 0px 5px 20px 0px rgba(245, 195, 75, 0.15);
+  background: var(--Color-Text-Dark, #041e42);
+}
+
+.header_frame .box_left .hover_border_2 {
+  margin-top: 10px;
+  height: 2px;
+  width: 110px;
+  flex-shrink: 0;
+  align-self: stretch;
+
+  background: var(--Color-Text-Dark, #041e42);
 }
 
 .header_frame .header_box .box_right {
@@ -239,97 +243,4 @@
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
-}
-
-/* SHOP CATEGORY */
-
-.shop_category_frame {
-  position: relative;
-  margin-top: 90px;
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.shop_category_frame .container {
-  flex-direction: column;
-}
-
-.container .category_top {
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.category_top span {
-  color: var(--Color-Text-Dark, #041e42);
-
-  font-family: Jost;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.category_top a {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 3px;
-  color: #041e42;
-}
-
-.category_top a:hover {
-  border-bottom: 2px solid rgba(245, 195, 75, 0.15);
-}
-
-.container .category_wrapper {
-  margin-top: 30px;
-  width: 100%;
-  height: auto;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.category_wrapper .category_box {
-  width: 142px;
-  height: auto;
-
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-}
-
-.category_box .category_image_box {
-  width: 142px;
-  height: 150px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 150px;
-  border: 1px solid var(--Color-Border, #eaeaea);
-  background: var(--Bg-White, #fff);
-}
-
-.category_box span {
-  margin-top: 15px;
-  color: var(--Color-Text-Dark, #041e42);
-  text-align: center;
-
-  font-family: Jost;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 28px;
 }
