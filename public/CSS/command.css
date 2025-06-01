@@ -623,3 +623,25 @@ p {
   line-height: 22px; /* 157.143% */
   text-decoration-line: line-through;
 }
+
+/* ADV FRAME */
+
+.home_page .adv_frame {
+  margin-top: 90px;
+  width: 100%;
+  height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #e5edff;
+  color: #0053f6;
+  text-align: center;
+
+  font-family: Jost;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
