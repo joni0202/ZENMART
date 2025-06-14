@@ -482,11 +482,21 @@
 
 /* NAVI BOX */
 
-.laptops_accessories_frame .navi_box .navi_contents {
-  margin-top: 60px;
+.laptops_accessories_frame .navi_box {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+}
+
+.laptops_accessories_frame .navi_box .navi_contents {
+  width: 459.835px;
+  height: 90px;
+  flex-shrink: 0;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -517,11 +527,12 @@
 }
 
 .laptops_accessories_frame .navi_box .left_box .left_cursor {
-  z-index: 3;
+  position: absolute;
 }
 
 .laptops_accessories_frame .navi_box .left_box .left_scle {
-  z-index: 1;
+  position: relative;
+  z-index: -1;
 }
 
 .laptops_accessories_frame .navi_box .navi_contents span {
@@ -552,4 +563,57 @@
   fill: var(--Bg-2, #f5c34b);
   stroke-width: 1px;
   stroke: var(--Bg-2, #f5c34b);
+}
+
+.laptops_accessories_frame .navi_box .right_box .right_sicle {
+  position: relative;
+  z-index: -1;
+}
+
+.laptops_accessories_frame .navi_box .right_box .right_cursor {
+  position: absolute;
+}
+
+.laptops_accessories_frame .navi_box .navi_contents .choosen {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.laptops_accessories_frame .navi_box .navi_contents .choosen span {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f5c34b;
+
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptops_accessories_frame .navi_box .navi_contents .choosen2 {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #f3f5f6;
+
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.laptops_accessories_frame .navi_box .navi_contents span {
+  color: var(--Text-Head, #051036);
+  text-align: center;
+
+  /* 14/Medium */
+  font-family: Jost;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
